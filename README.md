@@ -1,2 +1,2 @@
-# Hyperion
-Image processing library written in Halide
+# Halide examples
+Image processing concepts and algorithms implemented in Halide

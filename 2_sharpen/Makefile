@@ -32,7 +32,7 @@ all: run_sharpen
 clean:
 	@rm -rf bin/* ../outputs/*
 
-bin/sharpen.generator: generators/HalideSharpen.cpp
+bin/sharpen.generator: src/generators/HalideSharpen.cpp
 	@mkdir -p $(@D)
 	@$(CXX) $^ $(GENERATOR_DEPS) $(CXX_FLAGS) $(INCLUDES) $(LIBS) $(LIB_FLAGS) -o $@
 

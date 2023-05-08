@@ -19,6 +19,7 @@ inline Expr mod(const Expr& x) {
 int main(int argc, char ** argv) {
     if (argc < 2) {
         cout << "Usage: bin/patter_generation <output_filename>" << endl;
+        return -1;
     }
 
     const std::string output_filename = argv[1];

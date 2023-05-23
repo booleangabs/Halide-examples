@@ -1,5 +1,5 @@
 CXX = g++
-CXX_FLAGS = -std=c++20 -fno-rtti -O3
+CXX_FLAGS = -std=c++2a -fno-rtti -O3
 
 INCLUDES = -I$(HALIDE_ROOT)/include -I$(HALIDE_ROOT)/tools
 LIBS = -L$(HALIDE_ROOT)/lib 

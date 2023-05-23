@@ -1,7 +1,7 @@
 CXX = g++
 CXX_FLAGS = -std=c++2a -fno-rtti -O3
 
-INCLUDES = -I$(HALIDE_ROOT)/include -I$(HALIDE_ROOT)/tools
+INCLUDES = -I$(HALIDE_ROOT)/include -I$(HALIDE_ROOT)/share/Halide/tools
 LIBS = -L$(HALIDE_ROOT)/lib 
 LIB_FLAGS = -lHalide -lpthread -ldl -lz -ltinfo
 IMAGE_IO_FLAGS = -ljpeg `libpng-config --cflags --ldflags`

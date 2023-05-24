@@ -1,9 +1,9 @@
 CXX = g++
 CXX_FLAGS = -std=c++20 -fno-rtti -O3
 
-GENERATOR_DEPS = ${HALIDE_ROOT}/tools/GenGen.cpp
+GENERATOR_DEPS = ${HALIDE_ROOT}/share/Halide/tools/GenGen.cpp
 GENERATOR_OUTPUTS = o,h
-INCLUDES = -I$(HALIDE_ROOT)/include -I$(HALIDE_ROOT)/tools -Iinclude -Ibin
+INCLUDES = -I$(HALIDE_ROOT)/include -I$(HALIDE_ROOT)/share/Halide/tools -Iinclude -Ibin
 LIBS = -L$(HALIDE_ROOT)/lib 
 LIB_FLAGS = -lHalide -lpthread -ldl -lz -ltinfo
 IMAGE_IO_FLAGS = -ljpeg `libpng-config --cflags --ldflags`
@@ -51,4 +51,4 @@ run_sharpen: bin/main
 	@echo "Saved result to "$(PATH_OUT_SIMPLE)" and "$(PATH_OUT_FULL)
 
 .PHONY: all clean
-.PRECIOUS: bin/%
+.PRECIOUS: bin/*

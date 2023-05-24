@@ -1,5 +1,5 @@
 CXX = g++
-CXX_FLAGS = -std=c++20 -fno-rtti -O3
+CXX_FLAGS = -std=c++2a -fno-rtti -O3
 
 GENERATOR_DEPS = ${HALIDE_ROOT}/share/Halide/tools/GenGen.cpp
 GENERATOR_OUTPUTS = o,h
